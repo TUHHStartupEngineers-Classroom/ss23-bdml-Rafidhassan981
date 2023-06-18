@@ -1,6 +1,6 @@
 ---
 title: "01 Machine Learning Fundamentals"
-author: "Rafid Hassaninstall"
+author: "Rafid Hassan"
 ---
 
 # Challenge 1
