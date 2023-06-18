@@ -1,6 +1,6 @@
 ---
 title: "04 Performance Measures"
-author: "Sagar Wadke"
+author: "Rafid Hassan"
 ---
 
 
@@ -14,7 +14,7 @@ library(tidyverse)
 library(readxl)
 library(rsample)
 library(recipes)
-product_backorders_tbl  <- read_csv("C:/Users/Sagar/Documents/GitHub/ss23-bdml-SagarWadke/raw_data/product_backorders.csv")
+product_backorders_tbl  <- read_csv("C:/Users/RAFID/Documents/GitHub/ss23-bdml-Rafidhassan981/raw_data/product_backorders.csv")
 product_backorders_tbl <- product_backorders_tbl  %>%
   mutate_if(is.character, as.factor)
 set.seed(seed = 1113)
