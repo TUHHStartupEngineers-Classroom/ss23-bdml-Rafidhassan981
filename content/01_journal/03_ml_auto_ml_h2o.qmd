@@ -1,6 +1,6 @@
 ---
 title: "03 Automated Machine Learning with H20"
-author: "Sagar Wadke"
+author: "Rafid Hassan"
 ---
 
 
@@ -18,8 +18,8 @@ library(skimr)
 library(GGally)
 library(rsample)
 # Load Data data definitions
-employee_attrition_tbl <- read_csv("C:/Users/Sagar/Documents/GitHub/ss23-bdml-SagarWadke/raw_data/datasets-1067-1925-WA_Fn-UseC_-HR-Employee-Attrition.csv")
-path_data_definitions <- "C:/Users/Sagar/Documents/GitHub/ss23-bdml-SagarWadke/raw_data/data_definitions.xlsx"
+employee_attrition_tbl <- read_csv("C:/Users/RAFID/Documents/GitHub/ss23-bdml-Rafidhassan981/raw_data/datasets-1067-1925-WA_Fn-UseC_-HR-Employee-Attrition.csv")
+path_data_definitions <- "C:/Users/RAFID/Documents/GitHub/ss23-bdml-Rafidhassan981/raw_data/data_definitions.xlsx"
 definitions_raw_tbl   <- read_excel(path_data_definitions, sheet = 1, col_names = FALSE)
 employee_attrition_tbl
 
@@ -451,7 +451,7 @@ library(yardstick)
 library(workflows)
 library(tune)
 
-product_data <- read_csv("C:/Users/Sagar/Documents/GitHub/ss23-bdml-SagarWadke/raw_data/product_backorders.csv")
+product_data <- read_csv("C:/Users/RAFID/Documents/GitHub/ss23-bdml-Rafidhassan981/raw_data/product_backorders.csv")
 product_data2 <- product_data %>% 
   mutate(
     product_backorder = went_on_backorder %>% str_to_lower() %>% str_detect("yes") %>% as.numeric()
