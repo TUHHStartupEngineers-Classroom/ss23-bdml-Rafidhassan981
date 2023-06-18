@@ -1,6 +1,6 @@
 ---
 title: "05 LIME"
-author: "Sagar Wadke"
+author: "Rafid Hassan"
 ---
 
 ```{r setup, include=FALSE}
@@ -34,11 +34,11 @@ library(lime)
 ```{r}
 
 # Load Data
-employee_attrition_tbl <- read_csv("C:/Users/Sagar/Documents/GitHub/ss23-bdml-SagarWadke/raw_data/datasets-1067-1925-WA_Fn-UseC_-HR-Employee-Attrition.csv")
-definitions_raw_tbl    <- read_excel("C:/Users/Sagar/Documents/GitHub/ss23-bdml-SagarWadke/raw_data/data_definitions.xlsx", sheet = 1, col_names = FALSE)
+employee_attrition_tbl <- read_csv("C:/Users/RAFID/Documents/GitHub/ss23-bdml-Rafidhassan981/raw_data/datasets-1067-1925-WA_Fn-UseC_-HR-Employee-Attrition.csv")
+definitions_raw_tbl    <- read_excel("C:/Users/RAFID/Documents/GitHub/ss23-bdml-Rafidhassan981/raw_data/data_definitions.xlsx", sheet = 1, col_names = FALSE)
 
 # Processing Pipeline
-source("C:/Users/Sagar/Documents/GitHub/ss23-bdml-SagarWadke/00_Scripts/data_processing_pipeline.R")
+source("C:/Users/RAFID/Documents/GitHub/ss23-bdml-Rafidhassan981/00_Scripts/data_processing_pipeline.R")
 
 employee_attrition_readable_tbl <- process_hr_data_readable(employee_attrition_tbl, definitions_raw_tbl)
 
@@ -69,7 +69,7 @@ test_tbl  <- bake(recipe_obj, new_data = test_readable_tbl)
 # 2. Models ----
 
 h2o.init()
-automl_leader <- h2o.loadModel("C:/Users/Sagar/Documents/GitHub/ss23-bdml-SagarWadke/h20_models/StackedEnsemble_BestOfFamily_4_AutoML_1_20230614_122017")
+automl_leader <- h2o.loadModel("C:/Users/RAFID/Documents/GitHub/ss23-bdml-Rafidhassan981/h20_models/StackedEnsemble_BestOfFamily_4_AutoML_1_20230617_212610")
 automl_leader
 
 
