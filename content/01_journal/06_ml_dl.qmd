@@ -1,6 +1,6 @@
 ---
 title: "06 Deep Learning"
-author: "Sagar Wadke"
+author: "Rafid Hassan"
 ---
 
 
